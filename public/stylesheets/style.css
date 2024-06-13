@@ -1,0 +1,87 @@
+
+.box h3{
+    margin:10px;
+    font-size: 30px;
+    background-color: aliceblue;
+    padding: 5px 0px 5px 0px;
+   text-align: center;
+
+}
+.box{
+    margin: auto;
+    border:1px solid wheat;
+     width: 30%;
+     height: auto;
+     
+     background-color: rgb(233, 95, 70);
+     border-radius: 10px;
+     position: absolute;
+     top:50%;
+     left:50%;
+     transform: translate(-50%,-50%);
+
+}
+
+.form{
+     padding: 20px;
+     border-top: 5px solid white;
+     
+    
+}
+
+input{
+    margin-top: 0%;
+    padding:10px;
+    margin-right:10px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 0cap;
+    margin-left: 20px;
+}
+#sub:hover{
+background-color: green;
+}
+#task1{
+
+
+    width: 200px;
+}
+
+
+.task{
+    margin: 20px 20px; 
+}
+li{
+    border: 1px solid red;
+    margin-bottom:2px;
+    background-color: aliceblue;
+    padding: 8px;
+    border-radius: 5px; 
+    margin-left: 0;
+    
+}
+ul{
+    list-style-type:decimal;
+    list-style-position: outside;
+    margin-top:10px;
+    padding-left:5px;
+}
+li::marker {
+    color: white;
+  }
+
+h2{
+    text-align: center;
+    color:black
+}
+.del{
+    margin-top: 0;
+    margin-bottom: 2px;
+    position: relative;
+    left:89%;
+}
+.todoform {
+    display: flex;
+     justify-content: center;
+     align-items: 20px;
+}

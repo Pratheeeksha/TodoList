@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="/javascript/script.js"></script>
+
+</head>
+
+<body>
+    <div class="box">
+        <h3>To-Do List</h3>
+        <div class="form">
+            <form action="/" method="post" class="todoform">
+                <input type="text" name="task" id="task1" placeholder="Enter your task here ">
+                <input type="submit" value="Enter" id="sub" onclick="return validateForm()">
+            </form>
+            <div class="unlist">
+                <ul>
+                    <div class="list">
+                        <% newdata.forEach(function(new1){ %>
+                            <li><%= new1.task %>
+                            <form action="/del" method="post">
+                                <input type="hidden" name="taskid" value="<%= new1._id %>">
+                                <button type="submit"> Del </button>
+                            </form>
+                            
+                            
+                            
+                            </li>
+                            <!-- <div class="del">
+                                <button> Del </button>
+                            </div> -->
+                          <% }) %>
+                        
+                    </div>
+
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
